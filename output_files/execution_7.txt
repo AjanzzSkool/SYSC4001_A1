@@ -1,0 +1,18 @@
+0, 21, CPU burst
+21, 1, switch to kernel mode
+22, 10, context saved
+32, 1, find vector 15 in memory position 0x001E
+33, 1, load address 0X0584 into the PC
+34, 40, Sys Call(Run the ISR)
+74, 27, transfer data from device to memory
+101, 1, check for errors
+102, 1, IRET
+103, 35, CPU burst
+138, 1, switch to kernel mode
+139, 10, context saved
+149, 1, find vector 15 in memory position 0x001E
+150, 1, load address 0X0584 into the PC
+151, 40, ENDIO(Run the ISR)
+191, 28, Check device status
+219, 1, IRET
+220, 36, CPU burst
